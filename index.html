@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+    <link rel="icon" href="assets/imgs/burger-3.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstarp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-black">
+    <!-- navbar -->
+    <nav class="nav position-fixed w-100 top-0 z-3">
+        <div class="container-fluid bg-dark">
+            <div class="row mx-sm-5 d-flex flex-row flex-nowrap justify-content-between align-content-center py-2">
+                <div class="nav_logo col">
+                    <a href="#Home">
+                        <h2 class="text-light fs-1 fw-bold">BUR<span class="text-warning fs-1 fw-bold">GAR</span></h2>
+                    </a>
+                </div>
+
+                <input type="checkbox" id="dark_mode" hidden>
+                <input type="checkbox" id="nav_menu" hidden>
+
+                <div class="nav_links col d-flex justify-content-between align-items-center text-center ">
+                    <a href="#Home" class="text-light fw-medium text-center nav_menu fs-6 active">Home</a>
+                    <a href="#About" class="text-light fw-medium text-center nav_menu fs-6 text-nowrap">About us</a>
+                    <a href="#Review" class="text-light fw-medium text-center nav_menu fs-6 ">Review</a>
+                    <a href="#menu" class="text-light fw-medium text-center nav_menu fs-6 ">Menu</a>
+                    <a href="#Contact" class="text-light fw-medium text-center nav_menu fs-6 ">Contact</a>
+                    <label for="dark_mode" class="d-flex align-items-center ms-auto ms-sm-0 ">
+                        <i class="fa-solid fa-circle-half-stroke text-light"></i>
+                    </label>
+                    <label for="nav_menu" class="d-flex d-sm-none align-items-center ms-4 ms-sm-0">
+                        <i class="fa-solid fa-bars text-light"></i>
+                    </label>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- home -->
+    <section class="home" id="Home">
+        <div class="container">
+            <div class="row my-5 d-flex flex-column flex-sm-row flex--nowrap m-auto align-items-center">
+
+                <div class="img mb-4 d-flex justify-content-center justify-content-lg-start ms-sm-4 col mt-5">
+                    <img class="w-75 h-100" src="assets/imgs/burger-3.png" alt="">
+                </div>
+
+                <div class="text col mt-sm-5">
+                    <h1 class="text-light text-center text-sm-start fs-1 fw-bold mb-4 text-uppercase text_underline">
+                        Where Cravings Meet Happiness.</h1>
+                    <p class="text-dark-emphasis text-center text-sm-start fw-medium mb-5 ">Sink your teeth into the
+                        juiciest burgers in town crafted with fresh, handpicked ingredients and
+                        signature recipes that deliver unforgettable flavor. Whether you're craving timeless classics or
+                        bold new creations, our menu is designed to satisfy every taste and thrill every bite.</p>
+                    <div class="icons d-flex justify-content-center justify-content-sm-start gap-5 mb-5">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <a href="#"><i class="fa-solid fa-utensils text-warning fs-1"></i></a>
+                            <h3 class="text-light fw-bold mt-3 fs-5">Delicious</h3>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <a href="#"><i class="fa-solid fa-droplet text-warning fs-1"></i></a>
+                            <h3 class="text-light fw-bold mt-3 fs-5">Fresh</h3>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <a href="#"><i class="fa-solid fa-leaf text-warning fs-1"></i></a>
+                            <h3 class="text-light fw-bold mt-3 fs-5">Organic</h3>
+                        </div>
+                    </div>
+                    <div class="button  d-flex justify-content-center justify-content-sm-start">
+                        <button class="btn btn-warning py-1 px-3 fw-semibold">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of home -->
+
+    <!-- deals -->
+    <section class="deal">
+        <div class="container">
+            <div class="row gap-3 my-5 d-flex flex-column flex-sm-row">
+                <div class="group d-flex col  border border-2 border-warning rounded-4 py-1 align-items-center ">
+                    <div class="img col-4">
+                        <img class="w-100" src="assets/imgs/delicious-burger-studio-removebg-preview.png" alt="">
+                    </div>
+
+                    <div class="text col-8">
+                        <h3 class="text-light fw-bold fs-4 text-uppercase">Food</h3>
+                        <p class="text-light fw-medium fs-6">Fresh & Juicy Burgers Made Just for You.</p>
+                        <button class="btn fs-6 border-light border-2 px-3 fw-medium text-warning">buy now</button>
+                    </div>
+                </div>
+
+                <div class="group d-flex col  border border-2 border-warning rounded-4 py-3 align-items-center ">
+                    <div class="img col-4">
+                        <img class="w-100" src="assets/imgs/snaks.png" alt="">
+                    </div>
+
+                    <div class="text col-8 ">
+                        <h3 class="text-light fw-bold fs-4 text-uppercase">SNACK</h3>
+                        <p class="text-light fw-medium fs-6">Crunchy, Flavorful, and Ready to Enjoy!</p>
+                        <button class="btn fs-6 border-light border-2 px-3 fw-medium text-warning">buy now</button>
+                    </div>
+                </div>
+
+                <div class="group d-flex col  border border-2 border-warning rounded-4 py-3 align-items-center ">
+                    <div class="img col-4">
+                        <img class="w-100" src="assets/imgs/cup.png" alt="">
+                    </div>
+
+                    <div class="text col-8 ">
+                        <h3 class="text-light fw-bold fs-4 text-uppercase">BEVERAGES</h3>
+                        <p class="text-light fw-medium fs-6">Refreshing Drinks to Quench Your Thirst.</p>
+                        <button class="btn fs-6 border-light border-2 px-3 fw-medium text-warning">buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of deals -->
+
+    <!-- promo -->
+    <section class="promo">
+        <div class="container">
+            <div class="row gap-4 my-5 d-flex flex-column flex-sm-row">
+
+                <div
+                    class="group d-flex col bg-dark bg-opacity-75 rounded-4 py-3 align-items-center flex-column-reverse flex-sm-row">
+
+                    <div class="text col-sm-8 mx-3">
+                        <h4 class="text-warning fs-5 fw-medium mb-3">Payday promo</h4>
+                        <h3 class="text-light fw-bold fs-4 text-uppercase mb-4">GET 10% DISCOUNT ON PAYDAY WEEK</h3>
+                        <p class="text-light fw-medium fs-6">Treat yourself to your favorite burger and save big.</p>
+                        <button class="btn fs-6 border-light border-2 px-3 fw-medium text-warning">Order Now</button>
+                    </div>
+
+                    <div class="img col-sm-4 d-flex justify-content-center mb-5 mb-sm-0">
+                        <img class="w-50" src="assets/imgs/burger-3.png" alt="">
+                    </div>
+                </div>
+
+                <div
+                    class="group d-flex col bg-dark bg-opacity-75 rounded-4 py-3 align-items-center flex-column-reverse flex-sm-row">
+
+                    <div class="text col-sm-8 mx-3">
+                        <h4 class="text-warning fs-5 fw-medium mb-3">Payday promo</h4>
+                        <h3 class="text-light fw-bold fs-4 text-uppercase mb-4">GET 10% OFF ON ALL BEVERAGES THIS PAYDAY
+                            WEEK!</h3>
+                        <p class="text-light fw-medium fs-6">Refresh yourself with our tasty drinks and save.</p>
+                        <button class="btn fs-6 border-light border-2 px-3 fw-medium text-warning">Order Now</button>
+                    </div>
+
+                    <div class="img col-sm-4 d-flex justify-content-center mb-5 mb-sm-0">
+                        <img class="w-50" src="assets/imgs/cup2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of promo -->
+
+    <!-- about -->
+    <section class="about" id="About">
+        <div class="container">
+            <div class="row my-5 d-flex flex-column flex-sm-row m-auto align-items-center">
+
+                <div class="img mb-4 d-flex justify-content-center justify-content-lg-start ms-sm-4 col mt-5">
+                    <img class="w-100 h-100 rounded-5" src="assets/imgs/about.jpg" alt="">
+                </div>
+
+                <div class="text col mt-sm-5">
+                    <h2
+                        class="text-light text-center text-sm-start fs-4 fw-semibold mb-4 text-uppercase text_underline">
+                        FIND FOOD AND DRINKS, ALL IN ONE PLACE FOR YOUR BEST TASTE.</h2>
+                    <p class="text-dark-emphasis text-center text-sm-start fw-medium mb-3 ">Discover delicious burgers,
+                        refreshing drinks, and snacks made fresh daily. Enjoy quality ingredients, great prices, and
+                        exceptional service all with your health and safety in mind.</p>
+                    <div class="list_check d-flex gap-5 mb-5">
+
+                        <div class="d-flex flex-column align-items-start col-sm">
+                            <div class="d-flex flex-nowrap align-items-center">
+                                <span><i class="fa-solid fa-check text-warning fs-6"></i>></span>
+                                <h3 class="text-light-emphasis fw-bold mt-3 fs-6 text-nowrap"> Best Price</h3>
+                            </div>
+                            <div class="d-flex flex-nowrap align-items-center">
+                                <span><i class="fa-solid fa-check text-warning fs-6"></i>></span>
+                                <h3 class="text-light-emphasis fw-bold mt-3 fs-6 text-nowrap"> Best Service</h3>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-start col-sm">
+                            <div class="d-flex flex-nowrap align-items-center">
+                                <span><i class="fa-solid fa-check text-warning fs-6"></i>></span>
+                                <h3 class="text-light-emphasis fw-bold mt-3 fs-6 text-nowrap">Fresh Ingredient</h3>
+                            </div>
+                            <div class="d-flex flex-nowrap align-items-center">
+                                <span><i class="fa-solid fa-check text-warning fs-6"></i>></span>
+                                <h3 class="text-light-emphasis fw-bold mt-3 fs-6 text-nowrap">Health Protocol</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="button  d-flex justify-content-center justify-content-sm-start">
+                        <button class="btn btn-warning py-1 px-3 fw-semibold">About us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about -->
+
+    <!-- review -->
+    <section class="review" id="Review">
+        <div class="container-fluid bg-dark bg-opacity-50">
+            <div class="row py-5 d-flex flex-column m-auto align-items-center justify-content-center text-center">
+                <h2 class="text-light text-center fs-4 fw-semibold mb-4 text-uppercase text_underline">
+                    CUSTOMER REVIEW</h2>
+                <p class="text-dark-emphasis text-center fw-medium mb-3 text2">We pride ourselves on
+                    delivering high quality food and excellent service to all our customers. Your satisfaction is
+                    our top priority.</p>
+
+                <div class="slider mt-5">
+                    <div class="slides gap-5" id="slides">
+                        <div class="slide col bg-dark bg-opacity-75">
+                            <p class="text-light text-opacity-75 text-start fw-medium mb-4 w-100">The burger was a
+                                showstopper - juicy, bold, testy
+                                and unforgettable. Service was smooth
+                                like a well rehearsed script. I’d give it a standing ovation any day</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="img"><img src="assets/imgs/avater1.avif" alt=""></div>
+                                <div class="text">
+                                    <h3 class="text-light text-start fs-5 ms--2 fw-semibold mb-2 text-nowrap ">Bahaa
+                                        Badr</h3>
+                                    <h5 class="text-light text-opacity-50 text-start fs-5 ms--2 fw-medium text-nowrap">
+                                        front-end developer</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide col bg-dark bg-opacity-75">
+                            <p class="text-light text-opacity-75 text-start fw-medium mb-4">Every bite felt like opening
+                                night fresh, exciting, and satisfying. The payday promo was the perfect encore. Burger
+                                Shop knows how to put on a tasty performance.</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="img"><img src="assets/imgs/avater2.avif" alt=""></div>
+                                <div class="text">
+                                    <h3 class="text-light text-start fs-5 ms--2 fw-semibold mb-2 text-nowrap ">
+                                        Bahaa-mustafa</h3>
+                                    <h5 class="text-light text-opacity-50 text-start fs-5 ms--2 fw-medium text-nowrap">
+                                        developer</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide col bg-dark bg-opacity-75">
+                            <p class="text-light text-opacity-75 text-start fw-medium mb-4">From crispy snacks to
+                                refreshing drinks, the cast was flawless. The flavors danced on my tongue like a
+                                Broadway finale. Bravo, Burger Shop five stars from this hungry critic!</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="img"><img src="assets/imgs/avater3.avif" alt=""></div>
+                                <div class="text">
+                                    <h3 class="text-light text-start fs-5 ms--2 fw-semibold mb-2 text-nowrap ">
+                                        bahaa-mustafa</h3>
+                                    <h5 class="text-light text-opacity-50 text-start fs-5 ms--2 fw-medium text-nowrap">
+                                        softweer engineer</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide col bg-dark bg-opacity-75">
+                            <p class="text-light text-opacity-75 text-start fw-medium mb-4 w-100">The burger was a
+                                showstopper - juicy, bold, testy
+                                and unforgettable. Service was smooth
+                                like a well rehearsed script. I’d give it a standing ovation any day</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="img"><img src="assets/imgs/avater1.avif" alt=""></div>
+                                <div class="text">
+                                    <h3 class="text-light text-start fs-5 ms--2 fw-semibold mb-2 text-nowrap ">Bahaa
+                                        Badr</h3>
+                                    <h5 class="text-light text-opacity-50 text-start fs-5 ms--2 fw-medium text-nowrap">
+                                        front-end developer</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide col bg-dark bg-opacity-75">
+                            <p class="text-light text-opacity-75 text-start fw-medium mb-4">Every bite felt like opening
+                                night fresh, exciting, and satisfying. The payday promo was the perfect encore. Burger
+                                Shop knows how to put on a tasty performance.</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="img"><img src="assets/imgs/avater2.avif" alt=""></div>
+                                <div class="text">
+                                    <h3 class="text-light text-start fs-5 ms--2 fw-semibold mb-2 text-nowrap ">
+                                        Bahaa-mustafa</h3>
+                                    <h5 class="text-light text-opacity-50 text-start fs-5 ms--2 fw-medium text-nowrap">
+                                        developer</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide col bg-dark bg-opacity-75">
+                            <p class="text-light text-opacity-75 text-start fw-medium mb-4">From crispy snacks to
+                                refreshing drinks, the cast was flawless. The flavors danced on my tongue like a
+                                Broadway finale. Bravo, Burger Shop five stars from this hungry critic!</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="img"><img src="assets/imgs/avater3.avif" alt=""></div>
+                                <div class="text">
+                                    <h3 class="text-light text-start fs-5 ms--2 fw-semibold mb-2 text-nowrap ">
+                                        bahaa-mustafa</h3>
+                                    <h5 class="text-light text-opacity-50 text-start fs-5 ms--2 fw-medium text-nowrap">
+                                        softweer engineer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_control prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="btn_control next" onclick="nextSlide()">&#10095;</button>
+
+                    <!-- Indicators -->
+                    <div class="indicators" id="indicators"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of review -->
+
+    <!-- sunscribe -->
+    <section class="subscribe">
+        <div class="container-fluid bg-warning">
+            <div class="container">
+                <div class="row d-flex flex-column flex-sm-row flex-nowrap py-5  align-items-center">
+                    <div class="text col">
+                        <div class="">
+                            <h3 class="fs-2 fw-bold">GET EXCLUSIVE UPDATE</h3>
+                        </div>
+                        <p class="fs-6 fw-medium">Subscribe now to receive the latest news, special offers, and
+                            exclusive discounts straight to your inbox.</p>
+                    </div>
+                    <div class="btns col d-flex flex-nowrap flex-column flex-sm-row">
+                        <input type="email" placeholder="Enter your Email"
+                            class="w-100 py-3 fs-6 fw-light rounded-1 border-0 me-0 ps-3 mb-2 mb-sm-0">
+                        <button class="btn btn-dark py-3 fs-6 fw-light rounded-0 border-0 ms-0 rounded-1 text-nowrap"><i
+                                class="fa-solid fa-paper-plane me-2 fs-6"></i>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of sunscribe -->
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
