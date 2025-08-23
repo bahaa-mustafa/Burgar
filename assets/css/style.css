@@ -21,6 +21,9 @@ body {
 a {
     text-decoration: none !important;
 }
+ul{
+    list-style: none;
+}
 
 .nav_links .active {
     color: #ffc107 !important;
