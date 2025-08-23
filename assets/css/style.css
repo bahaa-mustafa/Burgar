@@ -177,6 +177,33 @@ ul {
 }
 
 
+/* menu style */
+.menu_control .text_underline{
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.menu_control .text_underline::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background: #ffc107;
+    border-radius: 2px;
+}
+
+.btns .active {
+    background-color: #ffc107 !important;
+    color: black !important;
+}
+
+.btns button:hover{
+    background-color: #ffc107 !important;
+    color: black !important;
+}
 
 
 @media (max-width:576px) {
@@ -219,9 +246,13 @@ ul {
         width: 75% !important;
     }
 
-    /* .slide{
-        width: 48%;
-    } */
+    /* menu style */
+
+    .menu_control .text2{
+        width: 75% !important;
+    }
+
+
 
 }
 

@@ -1,14 +1,45 @@
+const nav_active = document.querySelector(".nav_links")
+const btns = document.querySelector(".btns")
+
+nav_active.addEventListener("click", function (e) {
+
+    if (e.target.tagName == "A") {
+        resetActive(".nav_links a")
+        e.target.classList.add("active")
+
+    }else{
+        console.log("not it");
+        
+    }
+
+})
+
+
+btns.addEventListener("click", function(e){
+    if(e.target.tagName == "BUTTON"){
+        resetActive(".btns button")
+        e.target.classList.add("active")
+    }
+})
+
+function resetActive(item){
+    let btns = document.querySelectorAll(item)
+    btns.forEach(function(element){
+        element.classList.remove("active")
+    })
+}
+
+
+
+
+
+
+
+
 let index = 0;
 
 const slides = document.querySelector(".slides");
 const totalSlides = slides.children.length;
-// const slide = document.querySelector(".slide");
-// const slideWidth = slide.offsetWidth + 5;
-
-// console.log(totalSlides);
-
-// let nav = document.querySelector(nav)
-// nav.style.position = `static`
 
 const indicators = document.getElementById("indicators");
 
