@@ -7,6 +7,9 @@ const totalSlides = slides.children.length;
 
 // console.log(totalSlides);
 
+// let nav = document.querySelector(nav)
+// nav.style.position = `static`
+
 const indicators = document.getElementById("indicators");
 
 
