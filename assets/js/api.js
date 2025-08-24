@@ -61,7 +61,7 @@ function getData(food) {
 function display(list, target="pizza") {
     let cards = '';
     for (let i = 0; i < list.length; i++) {
-        cards += `<div class="card d-flex flex-column px-5 col-sm-3 col-xl-2">
+        cards += `<div class="group card d-flex flex-column px-5 col-sm-3 col-xl-2">
                 <img src="${list[i].image_url}">
                 <h3>${list[i].title.split(" & ").splice(0, 2).join("_&").split(" and ").splice(0, 2).join("_and_").split("-").splice(0, 2).join(" ").split(" ").splice(0, 2).join(" ").split("_&").splice(0, 2).join(" & ").split("_and_").splice(0, 2).join(" and ").split(" ").splice(0, 3).join(" ")}</h3>
         </div>`;
