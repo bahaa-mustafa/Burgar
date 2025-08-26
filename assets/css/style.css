@@ -25,9 +25,14 @@ body {
 a {
     text-decoration: none !important;
 }
+nav h2{
+    margin-bottom: 0;
+}
 
 ul {
     list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .nav_links .active {
@@ -206,7 +211,7 @@ ul {
     color: black !important;
 }
 
-.cards{
+.cards {
     border-bottom: 1px solid #ffc107 !important;
 }
 
@@ -239,27 +244,27 @@ ul {
 
 @media (max-width:576px) {
 
-    /* #nav_menu:checked~.nav_menu{
+    .nav_links .nav_menu {
+        display: none !important;
+        width: 100%;
+        position: absolute;
+        background-color: #354bdb;
+        z-index: 999;
+        left: 0;
+        top: 98%;
+        flex-direction: column !important;
+        padding: 20px 0 !important;
+    }
+    ul label {
+        order: 1 !important;
+    }
+
+    #nav_menu:checked~.nav_menu {
         display: flex !important;
     }
 
-    #nav_menu:checked~.nav_links{
-        position: absolute;
-        background-color: #354bdb;
-        flex-direction: column;
-        width: 100%;
-        min-height: 100vh;
-        top: 0;        
-    } */
 
 
-
-
-    .nav_menu {
-        display: none;
-        /* max-height: 0;
-        overflow: hidden; */
-    }
 
     .text_underline::after {
         content: "";
